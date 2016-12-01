@@ -22,6 +22,7 @@ production_url : http://sabarigr.github.io/web
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
 markdown: kramdown
 
+BASE_PATH : http://sabarigr.github.io/web
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
