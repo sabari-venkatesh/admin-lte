@@ -3,18 +3,38 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+			<!-- Main Header -->
+			{% include header.html %}
+			<!-- /.main-header -->
 
-    {% include header.html %}
+			<!-- Left side column. contains the logo and sidebar -->
+			{% include sidebar.html %}
+			<!-- /.main-sidebar -->
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
 
-    {% include footer.html %}
+				<!-- Content Header (Page header) -->
+				{% include content-header.html %}
+				<!-- ./content-header -->
 
+				<!-- Main content -->
+				{{ content }}
+				<!-- /.content -->
+
+			</div>
+			<!-- /.content-wrapper -->
+
+			<!-- Main Footer -->
+    	{% include footer.html %}
+    	<!-- /.main-footer -->
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+		{% include scripts.html %}
 	</body>
 
 </html>

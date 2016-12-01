@@ -1,0 +1,110 @@
+<section class="content-header bg-gray">
+	<form class="row" role="search">
+		<div class="col-sm-9">
+			<div class="input-group search-group">
+				<div class="input-group-btn">
+					<button type="button" class="btn btn-primary" data-toggle="collapse" href="#search-filters" aria-expanded="false" aria-controls="searchfilters">
+						<span class="fa fa-sliders"></span> Refine
+					</button>
+				</div>
+				<input type="text" class="form-control" placeholder="Search Programs, Episodes">
+			</div>
+		</div>
+		<div class="col-sm-3">
+			<select class="form-control">
+				<option>All Programs</option>
+				<option>Interconnection Media Library</option>
+				<option>Promos</option>
+			</select>
+		</div>
+		<div id="search-filters" class="collapse">
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<h4>Program Type</h4>
+					<div class="form-group">
+						<label>
+							<input type="checkbox" class="minimal" checked> Series
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="checkbox" class="minimal" checked> Miniseries
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="checkbox" class="minimal" checked> One Time Program
+						</label>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Manifestation</h4>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" checked name="manifestation"> HDBA - Base
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" name="manifestation"> HDEP - Embedded Promo
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" name="manifestation"> HDBD - Downconverted Base
+						</label>
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-2">
+					<h4>NOLA</h4>
+					<div class="form-group">
+						<label class="control-label">
+							NOLA Root
+						</label>
+						<input type="text" class="form-control">
+					</div>
+					<div class="form-group">
+						<label class="control-label">
+							Episode Number
+						</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+				<div class="col-sm-4 col-md-2">
+					<h4>Feeds Between</h4>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<input type="text" class="form-control pull-right" id="feeds">
+						</div>
+						<!-- /.input group -->
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-md-2">
+					<h4>Length</h4>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" checked name="length"> 00:30:00
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" name="length"> 00:60:00
+						</label>
+					</div>
+					<div class="form-group">
+						<label>
+							<input type="radio" class="minimal" name="length"> 00:90:00
+						</label>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Other">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</section>

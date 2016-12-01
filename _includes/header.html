@@ -1,27 +1,92 @@
-<header class="site-header" role="banner">
+<header class="main-header">
 
-  <div class="wrapper">
+	<!-- Logo -->
+	<a href="index.html" class="logo">
+		<!-- mini logo for sidebar mini 50x50 pixels -->
+		<span class="logo-mini">
+					<img src="images/MYPBSlogo-small.png" alt="">
+				</span>
+		<!-- logo for regular state and mobile devices -->
+		<span class="logo-lg">
+					<img src="images/MYPBSlogo.png" alt="">
+				</span>
+	</a>
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-
-    <nav class="site-nav">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </span>
-
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
+	<!-- Header Navbar -->
+	<!-- Header Navbar: style can be found in header.less -->
+	<nav class="navbar navbar-static-top" role="navigation">
+		<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+			<span class="sr-only">Toggle navigation</span>
+		</a>
+		<ul class="nav navbar-nav pull-left">
+			<li>
+				<a href="" class="lead">Content Distribution</a>
+			</li>
+		</ul>
+		<!-- Navbar Right Menu -->
+		<div class="navbar-custom-menu">
+			<ul class="nav navbar-nav">
+				<!-- Messages: style can be found in dropdown.less-->
+				<li class="dropdown messages-menu">
+					<a href="media-retrieval.html">
+						<i class="fa fa-download"></i>
+						<span class="label label-warning">10</span>
+					</a>
+				</li>
+				<!-- Notifications: style can be found in dropdown.less -->
+				<li class="dropdown notifications-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-bell-o"></i>
+						<span class="label label-warning">10</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="header">You have 10 notifications</li>
+						<li>
+							<!-- inner menu: contains the actual data -->
+							<ul class="menu">
+								<li>
+									<a href="#">
+										<i class="ion ion-ios-people info"></i> Notification title
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="footer"><a href="#">View all</a></li>
+					</ul>
+				</li>
+				<!-- Tasks: style can be found in dropdown.less -->
+				<li class="dropdown tasks-menu">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-gear"></i>
+					</a>
+					<ul class="dropdown-menu">
+						<li class="header">You have 9 tasks</li>
+						<li>
+							<!-- inner menu: contains the actual data -->
+							<ul class="menu">
+								<li>
+									<!-- Task item -->
+									<a href="#">
+										<h3>
+                      Design some buttons
+                      <small class="pull-right">20%</small>
+                    </h3>
+										<div class="progress xs">
+											<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+												<span class="sr-only">20% Complete</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<!-- end task item -->
+							</ul>
+						</li>
+						<li class="footer">
+							<a href="#">View all tasks</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
 </header>

@@ -1,24 +1,4 @@
-<footer class="site-footer">
-
-	<div class="wrapper">
-
-		<h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-		<div class="footer-col-wrapper">
-			<div class="footer-col footer-col-1">
-				<ul class="contact-list">
-					{% if site.author %}
-					<li>
-						{{ site.author.name | escape }}
-					</li>
-					<li>
-						<a href="mailto:{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>
-					</li>
-					{% endif %}
-				</ul>
-			</div>
-		</div>
-
-	</div>
-
+<footer class="main-footer">
+	<!-- Default to the left -->
+	<strong>Copyright &copy; 2016 <a href="#">{{ site.author.name | escape }}</a>.</strong> All rights reserved.
 </footer>
