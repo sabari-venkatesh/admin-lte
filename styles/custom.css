@@ -1,0 +1,73 @@
+.navbar-nav a {
+	margin: 0;
+}
+
+form[role="search"] > [class*="col-"],
+.search-group,
+.search-group > .input-group-btn {
+	/* position: static; */
+}
+
+.content-header {
+	padding: 15px;
+}
+
+#search-filters {
+	padding: 15px;
+	clear: both;
+}
+
+#search-filters .form-group {
+	margin-bottom: 0;
+}
+
+#search-results>tbody>tr>td {
+	vertical-align: middle;
+}
+
+.taglist .label {
+	display: inline-block;
+}
+
+h1:first-child,
+.h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
+.single .row {
+	margin-bottom: 15px;
+}
+
+.form-static .control-label,
+.form-static .form-control-static {
+	font-weight: 400;
+	padding-bottom: 0;
+	min-height: 1px;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+.form-static .form-group {
+	margin-bottom: 7px;
+}
+
+.form-static .form-group:last-child {
+	margin-bottom: 0;
+}
+
+.table>thead>tr>th {
+	vertical-align: top;
+}
+
+#media-retrieval_wrapper .dataTables_filter {
+	display: none;
+}
+
+.cell-nowrap {
+	white-space: nowrap;
+}

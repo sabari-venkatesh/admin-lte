@@ -1,9 +1,22 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>
+	{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
+	</title>
+	<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.6 -->
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/bootstrap/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/iCheck/minimal/all.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/bootstrap-slider/slider.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/vendor/datatables/dataTables.bootstrap.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="{{ BASE_PATH }}/styles/AdminLTE.min.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/styles/skins/skin-blue.min.css">
+	<link rel="stylesheet" href="{{ BASE_PATH }}/styles/custom.css">
 </head>
