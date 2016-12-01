@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Making an independent website
 description: How to make an independent website with GitHub Pages.
 ---
